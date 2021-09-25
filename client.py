@@ -1,3 +1,7 @@
+'''
+   TRABALHO PARCIAL 02 – SINCRONIZAÇÃO DE RELÓGIO
+   Hélio Potelicki, Luis Felipe Zaguini e Pedro Henrique Roweder
+ '''
 from datetime import datetime, timedelta
 from dateutil.parser import parse
 from time import sleep
