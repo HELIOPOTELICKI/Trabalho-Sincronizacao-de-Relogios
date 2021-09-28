@@ -50,8 +50,6 @@ def startConnecting(master_server):
 
 def getAverageClockDiff():
 
-    current_client_data = client_data.copy()
-
     time_difference_list = list(client['time_difference']
                                 for client_addr, client in client_data.items())
 
