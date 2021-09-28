@@ -39,7 +39,6 @@ def initiateSlaveClient(port=8080):
 
     receive_time_thread = threading.Thread(target=startReceivingTime,
                                            args=(slave_client, ))
-
     receive_time_thread.start()
 
 

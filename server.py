@@ -101,10 +101,8 @@ def initiateClockServer(port=8080):
     master_server.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
     master_server.bind(('', port))
 
-    # Inicia relógio do servidor
-    master_server.listen(10)
-
     # Inicia conexões
+    master_server.listen(10)
     master_thread = Thread(target=startConnecting, args=(master_server, ))
     master_thread.start()
 
